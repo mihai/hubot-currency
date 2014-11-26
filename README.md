@@ -41,7 +41,7 @@ the list of [open issues](https://github.com/mihai/hubot-currency/issues?state=o
 for some suggestions to get started, and submit a pull request.
 
 Feel free to add yourself to the
-[CONTRIBUTORS](https://github.com/hubot-scripts/hubot-currency/blob/master/CONTRIBUTORS)
+[CONTRIBUTORS](https://github.com/mihai/hubot-currency/blob/master/CONTRIBUTORS)
 list while submitting a pull request.
 
 ## License
