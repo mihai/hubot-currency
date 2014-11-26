@@ -6,7 +6,7 @@
 #
 # Commands:
 #   hubot (currency|currencies) - list the supported currency codes
-#   hubot supported (currency|currencies) - same as above
+#   hubot supported (currency|currencies) - list the supported currency codes
 #   hubot (currency|exchange) rate <currency-code> - list USD, GBP, and EUR exchange rates for <currency-code>
 #   hubot (currency|exchange) <value> <currency-code> (in|to|into) <other-currency-code> - convert <value> from <currency-code> to <other-currency-code>
 #
