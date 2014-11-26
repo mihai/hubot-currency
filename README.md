@@ -1,4 +1,4 @@
-# Hubot Currency
+# Hubot Currency [![npm version](https://badge.fury.io/js/hubot-currency.svg)](http://badge.fury.io/js/hubot-currency)
 
 Convert between currencies at daily exchange rates, using Google's currency
 converter: https://www.google.com/finance/converter.
