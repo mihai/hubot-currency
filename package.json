@@ -1,7 +1,7 @@
 {
   "name": "hubot-currency",
   "description": "Convert between currencies at daily exchange rates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Mihai Cîrlănaru <mihai@cirlanaru.com>",
   "license": "MIT",
   "keywords": [
