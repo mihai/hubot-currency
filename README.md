@@ -23,6 +23,8 @@ Add **hubot-currency** to your `external-scripts.json`:
 
 Run `npm install hubot-currency`
 
+## Configuration
+- `HUBOT_CURRENCY_BASE_CURRENCIES` comma-separated list of base currencies. Defaults to "USD,GBP,EUR".
 
 ## Commands
 
