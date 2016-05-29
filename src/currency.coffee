@@ -4,6 +4,9 @@
 # Dependencies:
 #   "cheerio": "~0.18.0"
 #
+# Configuration:
+#   HUBOT_CURRENCY_BASE_CURRENCIES
+#
 # Commands:
 #   hubot (currency|currencies) - list the supported currency codes
 #   hubot supported (currency|currencies) - list the supported currency codes
@@ -55,7 +58,14 @@ module.exports = (robot) ->
 
   robot.respond /(currency|exchange) rate (\S{3}) ?.*/i, (msg) ->
     currency = msg.match[2].toUpperCase()
-    (getConvertedAmount(msg, 1, currency, base) unless currency is base) for base in ['USD', 'EUR', 'GBP']
+
+    defBase = process.env.HUBOT_CURRENCY_BASE_CURRENCIES
+    if defBase?
+        defBase = defBase.split(',')
+    else
+        defBase = ['USD', 'EUR', 'GBP']
+
+    (getConvertedAmount(msg, 1, currency, base) unless currency is base) for base in defBase
 
   robot.respond /(currency|exchange) ([0-9]+\.?[0-9]*)\s?(\S{3})( (in)?(to)?)? (\S{3}) ?.*/i, (msg) ->
     value = msg.match[2]
